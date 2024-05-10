@@ -108,11 +108,27 @@
       }
       .preheader {
         text-align: center;
-        padding: 40px 10px 80px;
+        padding: 40px 10px 60px;
         background-color: #00b7f1;
         position: relative;
-        clip-path: ellipse(70% 100% at 50% 0%);
         overflow: hidden;
+      }
+      .logo {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 22px;
+        display: inline-block;
+        margin-bottom: 35px;
+        text-transform: capitalize;
+      }
+      .dark-logo {
+        color: #01227c;
+        margin-bottom: 0;
+      }
+      .logo span {
+        font-size: 8px;
+        vertical-align: text-top;
       }
       .preheader img {
         width: 221.2px;
@@ -240,27 +256,11 @@
         text-align: center;
         margin: 0 auto 25px;
       }
-      .social {
-        margin-bottom: 20px;
-      }
-      .social a {
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        border-radius: 50%;
-        display: inline-block;
-        text-align: center;
-        margin: 0 6px;
-        vertical-align: middle;
-        background-color: #ffffff;
-      }
-      .social img {
-        vertical-align: middle;
-      }
+
       .footer-ancor {
         display: block;
         text-align: center;
-        margin: 0 auto;
+        margin: 0 auto 25px;
       }
       .footer-ancor a {
         font-weight: 400;
@@ -271,7 +271,6 @@
         margin: 0 9px;
         text-decoration: underline;
         text-transform: capitalize;
-        margin-bottom: 25px;
       }
       .powered-by {
         font-weight: 400;
@@ -280,10 +279,7 @@
         margin-bottom: 25px;
         text-align: center;
       }
-      .dark-logo,
-      .dark-social {
-        display: none;
-      }
+
       @media (prefers-color-scheme: dark) {
         body {
           background-color: #282828;
@@ -321,18 +317,8 @@
         .powered-by a {
           color: #808080;
         }
-        .light-logo,
-        .light-social {
-          display: none;
-        }
-        .dark-logo,
-        .dark-social {
-          display: block;
-          text-align: center;
-          margin: 0 auto;
-        }
-        .dark-social {
-          margin-bottom: 20px;
+        .dark-logo {
+          color: #fff;
         }
         /* .main a { */
       }
@@ -351,11 +337,7 @@
         <td class="container">
           <div class="content">
             <div class="preheader">
-              <!-- <a href="#"><span class="light-logo">raiyansoft&copy;</span></a> -->
-              <a href="#"
-                ><img src="logo.png" class="light-logo" />
-                <img src="dark-logo.png" class="dark-logo"
-              /></a>
+              <a href="#" class="logo">raiyansoft<span>&copy;</span> </a>
               <h4>عرض خاص علي هذا الرابط</h4>
               <a href="#" class="discount">احصل علي الخصم الآن</a>
             </div>
@@ -424,34 +406,12 @@
                 cellspacing="0"
               >
                 <tr>
-                  <td class="content-block">
-                    <div class="social light-social">
-                      <a href="#">
-                        <img src="light-soical/01.png" />
-                      </a>
-                      <a href="#">
-                        <img src="light-soical/02.png" />
-                      </a>
-                      <a href="#">
-                        <img src="light-soical/03.png" />
-                      </a>
-                      <a href="#">
-                        <img src="light-soical/04.png" />
-                      </a>
-                    </div>
-                    <div class="social dark-social">
-                      <a href="#">
-                        <img src="dark-social/01.png" />
-                      </a>
-                      <a href="#">
-                        <img src="dark-social/02.png" />
-                      </a>
-                      <a href="#">
-                        <img src="dark-social/03.png" />
-                      </a>
-                      <a href="#">
-                        <img src="dark-social/04.png" />
-                      </a>
+                  <td>
+                    <div class="footer-ancor">
+                      <a href="#">linkedin</a>
+                      <a href="#">instagram</a>
+                      <a href="#">twitter</a>
+                      <a href="#">tiktok</a>
                     </div>
                   </td>
                 </tr>
@@ -471,7 +431,9 @@
                 </tr>
                 <tr>
                   <td>
-                    <img src="dark-logo.png" alt="logo" />
+                    <a href="#" class="logo dark-logo"
+                      >raiyansoft<span>&copy;</span>
+                    </a>
                   </td>
                 </tr>
               </table>
