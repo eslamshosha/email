@@ -38,7 +38,7 @@
         display: block;
         margin: 0 auto !important;
         /* makes it centered */
-        max-width: 600px;
+        max-width: 100%;
         width: 600px;
         margin: 0 auto;
       }
@@ -324,6 +324,31 @@
           color: #fff;
         }
         /* .main a { */
+      }
+      @media only screen and (max-device-width: 480px) {
+        .wrapper {
+          padding: 40px 20px;
+        }
+        .preheader h4 {
+          font-size: 26px;
+          line-height: 35px;
+        }
+        .steps {
+          font-size: 13px;
+        }
+        .footer-ancor a {
+          margin-bottom: 5px;
+        }
+        .steps {
+          height: 70px;
+          line-height: 70px;
+          vertical-align: middle;
+        }
+        .number {
+          height: 70px;
+          width: 70px;
+          line-height: 70px;
+        }
       }
     </style>
   </head>
