@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
     <title>email</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap");
@@ -23,11 +23,13 @@
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;
         min-height: 100vh;
+        mso-line-height-rule: exactly;
       }
       table {
         border-collapse: separate;
         mso-table-lspace: 0pt;
         mso-table-rspace: 0pt;
+        text-align: center;
         width: 100%;
       }
       table td {
@@ -38,15 +40,15 @@
         display: block;
         margin: 0 auto !important;
         /* makes it centered */
-        max-width: 100%;
-        width: 600px;
-        margin: 0 auto;
+        max-width: 600px;
+        width: 100%;
+        margin: 0px auto;
       }
       .content {
         box-sizing: border-box;
         display: block;
-        margin: 0 auto;
-        max-width: 640px;
+        margin: 0px auto;
+        max-width: 600px;
       }
       h1,
       h2,
@@ -127,6 +129,10 @@
         font-size: 22px;
         margin-bottom: 0;
       }
+      .logo-img {
+        width: 132px;
+        height: 30px;
+      }
       .logo span {
         font-size: 8px;
         vertical-align: text-top;
@@ -145,7 +151,8 @@
       }
       .preheader .discount {
         width: 271px;
-        height: 56px;
+        /* height: 56px; */
+        vertical-align: middle;
         line-height: 56px;
         border-radius: 4px;
         font-weight: 600;
@@ -162,10 +169,12 @@
         align-items: center;
         justify-content: center; */
         text-decoration: none;
+        mso-line-height-rule: exactly;
       }
       .main .discount {
         width: 271px;
-        height: 56px;
+        /* height: 56px; */
+        vertical-align: middle;
         line-height: 56px;
         border-radius: 4px;
         font-weight: 600;
@@ -182,6 +191,7 @@
         align-items: center;
         justify-content: center; */
         text-decoration: none;
+        mso-line-height-rule: exactly;
       }
       .main {
         text-align: center;
@@ -189,7 +199,7 @@
       .item {
         display: block;
         width: 100%;
-        height: 83px;
+        /* height: 83px; */
         line-height: 83px;
         /* display: flex;
         align-items: center;
@@ -201,6 +211,7 @@
         font-weight: 500;
         font-size: 22px;
         color: #000639;
+        mso-line-height-rule: exactly;
       }
       .main h5 {
         font-weight: 800;
@@ -214,35 +225,38 @@
         display: flex;
         background-color: #f1f1f1;
         width: 100%;
-        height: 83px;
-        line-height: 83px;
+        /* height: 83px; */
+        line-height: 80px;
         border-radius: 0px 41.5px 41.5px 0px;
         font-weight: 600;
         font-size: 18px;
         color: #000639;
         text-align: center;
         margin-bottom: 15px;
+        mso-line-height-rule: exactly;
       }
       .steps-text {
-        width: 100%;
+        min-width: 70%;
         text-align: center;
       }
       .number {
         display: block;
         text-align: center;
         width: 80px;
-        height: 80px;
+        /* height: 80px; */
         flex-shrink: 0;
+        min-width: 80px;
         line-height: 80px;
         border-radius: 50%;
         background-color: #00b7f1;
         color: #fff;
         font-weight: 700;
         font-size: 28px;
+        mso-line-height-rule: exactly;
       }
       .justify {
         display: block;
-        width: 80px;
+        min-width: 80px;
       }
       .wrapper {
         background-color: #fff;
@@ -282,18 +296,32 @@
         margin-bottom: 25px;
         text-align: center;
       }
-
+      a.gif-img {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-top: 30px;
+      }
+      .gif-img img {
+        width: 100%;
+        height: auto;
+      }
+      .app-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+      }
       @media (prefers-color-scheme: dark) {
         body {
-          background-color: #282828;
+          background-color: #fff;
         }
         .container {
-          background-color: #2c2b2a;
+          background-color: #fff;
         }
         .wrapper {
-          background-color: #2c2b2a;
+          background-color: #fff;
         }
-        .footer {
+        /* .footer {
           background-color: #1c1c1c;
         }
         p,
@@ -322,8 +350,7 @@
         }
         .dark-logo {
           color: #fff;
-        }
-        /* .main a { */
+        } */
       }
       @media only screen and (max-device-width: 480px) {
         .wrapper {
@@ -340,14 +367,17 @@
           margin-bottom: 5px;
         }
         .steps {
-          height: 70px;
           line-height: 70px;
           vertical-align: middle;
+          align-items: center;
         }
+        /* .steps-text {
+          width: 66%;
+        } */
         .number {
-          height: 70px;
           width: 70px;
           line-height: 70px;
+          min-width: 70px;
         }
       }
     </style>
@@ -358,114 +388,156 @@
       border="0"
       cellpadding="0"
       cellspacing="0"
-      class="body"
+      align="center"
+      width="100%"
     >
-      <tr>
-        <!-- <td>&nbsp;</td> -->
-        <td class="container">
-          <div class="content">
-            <div class="preheader">
-              <a href="#" class="logo"><span>&copy;</span>raiyansoft </a>
-              <h4>عرض خاص علي هذا الرابط</h4>
-              <a href="#" class="discount">احصل علي الخصم الآن</a>
-            </div>
-            <table role="presentation" class="main">
-              <tr>
-                <td class="wrapper">
-                  <table
-                    role="presentation"
-                    border="0"
-                    cellpadding="0"
-                    cellspacing="0"
-                  >
-                    <tr>
-                      <td>
-                        <h2>لفترة محدودة</h2>
-                        <h3>40<span>%</span></h3>
-                        <p>خصم علي</p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <span class="item">برمجة التطبيقات</span>
-                        <span class="item">تصميم المواقع</span>
-                        <span class="item">المتاجر الالكترونية</span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <h5>مراحل العمل :</h5>
-                        <span class="steps">
-                          <span class="number">1</span>
-                          <span class="steps-text">التحليل الشامل للمشروع</span>
-                        </span>
-                        <span class="steps">
-                          <span class="number">2</span>
-                          <span class="steps-text">المخطط أو الوايرفريم</span>
-                        </span>
-                        <span class="steps">
-                          <span class="number">3</span>
-                          <span class="steps-text">التصميم</span>
-                        </span>
-                        <span class="steps">
-                          <span class="number">4</span>
-                          <span class="steps-text">البرمجة</span>
-                        </span>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <a href="#" class="discount">احصل علي الخصم الآن</a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-            <div class="footer">
+      <tbody>
+        <tr>
+          <td align="center" style="padding-top: 24px">
+            <center align="center" style="text-align: center" width="100%">
               <table
                 role="presentation"
                 border="0"
                 cellpadding="0"
                 cellspacing="0"
+                width="600"
+                align="center"
+                style="
+                  background-color: #ffffff;
+                  margin: 0 auto;
+                  max-width: 600px;
+                "
               >
-                <tr>
-                  <td>
-                    <div class="footer-ancor">
-                      <a href="#">linkedin</a>
-                      <a href="#">instagram</a>
-                      <a href="#">twitter</a>
-                      <a href="#">tiktok</a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="footer-ancor">
-                      <a href="#">Contact us</a>
-                      <a href="#">Location</a>
-                      <a href="#">News</a>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="content-block powered-by">
-                    Copyright © 2024 شركة ريان سوفت | Raiyansoft
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="#" class="logo dark-logo"
-                      >raiyansoft<span>&copy;</span>
-                    </a>
-                  </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <td class="container">
+                      <div class="content">
+                        <div class="preheader">
+                          <a href="https://raiyansoft.com/" class="logo"
+                            ><span>&copy;</span>raiyansoft
+                          </a>
+                          <h4>عرض خاص علي هذا الرابط</h4>
+                          <a
+                            href="https://raiyansoft.com/start/"
+                            class="discount"
+                            >احصل علي الخصم الآن</a
+                          >
+                        </div>
+                        <table role="presentation" class="main">
+                          <tr>
+                            <td class="wrapper">
+                              <table
+                                role="presentation"
+                                border="0"
+                                cellpadding="0"
+                                cellspacing="0"
+                              >
+                                <tr>
+                                  <td>
+                                    <h2>لفترة محدودة</h2>
+                                    <h3>40<span>%</span></h3>
+                                    <p>خصم علي</p>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <span class="item">برمجة التطبيقات</span>
+                                    <span class="item">تصميم المواقع</span>
+                                    <span class="item"
+                                      >المتاجر الالكترونية</span
+                                    >
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <h5>مراحل العمل :</h5>
+                                    <span class="steps">
+                                      <span class="number">1</span>
+                                      <span class="steps-text"
+                                        >التحليل الشامل للمشروع</span
+                                      >
+                                    </span>
+                                    <span class="steps">
+                                      <span class="number">2</span>
+                                      <span class="steps-text"
+                                        >المخطط أو الوايرفريم</span
+                                      >
+                                    </span>
+                                    <span class="steps">
+                                      <span class="number">3</span>
+                                      <span class="steps-text">التصميم</span>
+                                    </span>
+                                    <span class="steps">
+                                      <span class="number">4</span>
+                                      <span class="steps-text">البرمجة</span>
+                                    </span>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <a
+                                      href="https://raiyansoft.com/start/"
+                                      class="discount"
+                                      >احصل علي الخصم الآن</a
+                                    >
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <div class="footer" style="text-align: center">
+                          <table
+                            role="presentation"
+                            border="0"
+                            cellpadding="0"
+                            cellspacing="0"
+                            width="100%"
+                          >
+                            <tr>
+                              <td>
+                                <div class="footer-ancor">
+                                  <a href="#">linkedin</a>
+                                  <a href="#">instagram</a>
+                                  <a href="#">twitter</a>
+                                  <a href="#">tiktok</a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <div class="footer-ancor">
+                                  <a href="#">Contact us</a>
+                                  <a href="#">Location</a>
+                                  <a href="#">News</a>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="content-block powered-by">
+                                Copyright © 2024 شركة ريان سوفت | Raiyansoft
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a
+                                  href="https://raiyansoft.com/"
+                                  class="logo dark-logo"
+                                  >raiyansoft<span>&copy;</span>
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
               </table>
-            </div>
-          </div>
-        </td>
-        <!-- <td>&nbsp;</td> -->
-      </tr>
+            </center>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>
